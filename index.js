@@ -1,7 +1,6 @@
 require("dotenv").config(); // Load environment variables
 const TelegramBot = require("node-telegram-bot-api");
 
-// Load BOT_TOKEN from .env file
 const BOT_TOKEN = process.env.BOT_TOKEN;
 const bot = new TelegramBot(BOT_TOKEN, { polling: true });
 
